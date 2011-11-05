@@ -1,0 +1,18 @@
+Twitter client for posting long tweets, written in self-editing Ruby
+
+Usage: cuttweet.rb [options] [tweet ID] [tweet]
+
+When a tweet ID is provided, cuttweet answers this tweet. You can find the
+tweet ID in the URL of a tweet; for example, 76322558840020992 is the tweet ID
+for https://twitter.com/#!/Phlogistique/status/76322558840020992
+
+If you don't write the tweet on command line, cuttweet will invoke vim for
+editing the tweet.
+
+Because it is self-editing code, it has to be installed as writeable by the
+user. If you have several accounts, install several instances, named after each
+one of your accounts.
+
+Options:
+     --help          Displays help
+  -a --get-new-auth  Re-authentify and get a new token and secret for Twitter
